@@ -1,0 +1,8 @@
+<div>
+<h2>Star Rating</h2>
+  <span *ngFor="let s of stars" (mouseenter)="hoverState(s)" (mouseleave)="resetHoverState()" (click)="rate(s)" class="star">
+    <i class="fa fa-star" [ngClass]="(s<=rating)||(s<=hover)?'selected':null"></i>
+  </span>
+</div>
+
+

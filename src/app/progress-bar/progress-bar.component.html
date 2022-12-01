@@ -1,0 +1,10 @@
+<h2>Progress Bar</h2>
+<div class="bar-container">
+  <div class="progress-bar" [ngStyle]="{'flex-basis':width + '%'}"></div>
+</div>
+
+<div class="controls">
+  <button class="btn" (click)="play()" [disabled]="loading"> <i class="fa fa-play"></i> </button>
+  <button class="btn" (click)="pause()" [disabled]="loading==false"> <i class="fa fa-pause"></i> </button>
+  <button class="btn" (click)="stop()" [disabled]="width==0||progress==0"> <i class="fa fa-stop"></i> </button>
+</div>

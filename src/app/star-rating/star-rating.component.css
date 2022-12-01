@@ -1,0 +1,9 @@
+
+.star i:hover, .selected{
+color:orange;
+cursor:pointer;
+}
+
+.star{
+margin:2px;
+}

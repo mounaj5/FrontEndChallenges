@@ -1,0 +1,12 @@
+<div class="container">
+  <h2 class="header">Timer</h2>
+  <div class="timer">
+    <h2 class="time">{{time.hrs}} : {{time.min}} : {{time.sec}}</h2>
+  </div>
+
+<div class="controls">
+  <button (click)="startTimer()" [disabled]='counting==true' class="btn start">Start</button>
+  <button (click)="pauseTimer()" [disabled]='counting==false' class="btn pause">Pause</button>
+  <button (click)="stopTimer()" [disabled]='counting==false' class="btn stop">Stop</button>
+</div>
+</div>
